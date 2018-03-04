@@ -2,7 +2,7 @@
 made by dalton all rights reserved omni
 --]]
 
-local ITEM = Clockwork.item:NEW();
+local ITEM = Clockwork.item:New();
 
 ITEM.name = "Jar of Honey";
 ITEM.cost = 17;

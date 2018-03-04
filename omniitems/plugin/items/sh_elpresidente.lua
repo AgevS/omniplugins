@@ -2,7 +2,7 @@
 made by dalton all rights reserved omni
 --]]
 
-local ITEM = Clockwork.item:NEW();
+local ITEM = Clockwork.item:New("alcohol_base");
 
 ITEM.name = "El Presidente";
 ITEM.cost = 22;
