@@ -15,12 +15,8 @@ ITEM.business = true;
 ITEM.description = "An alcoholic beverage that is made with vodka, Raspberry Puree, and lemonade.";
 
 function ITEM:OnUse(player, itemEntity)
-	player:SetSharedVar("antidepressants", CurTime() + 600);
-end;
-
-function ITEM:OnUse(player, itemEntity)
   player:SetHealth( math.Clamp( player:Health() + 1, 0, player:GetMaxHealth() ) );
-
+	player:SetSharedVar("antidepressants", CurTime() + 600);
   player:BoostAttribute(self.name, ATB_ENDURANCE, 1, 120);
   -- dalton BIIIIIG gay.
 end;
