@@ -12,7 +12,7 @@ ITEM.access = "L";
 ITEM.useText = "Drink";
 ITEM.category = "Alcohol";
 ITEM.business = true;
-ITEM.description = "An alcoholic beverage that is made with bourbon, Grand Marnier, suger, and a thin wheel of lemon.";
+ITEM.description = "An alcoholic beverage that is made with bourbon, Grand Marnier, sugar, and a thin wheel of lemon.";
 
 function ITEM:OnUse(player, itemEntity)
   player:SetHealth( math.Clamp( player:Health() + 1, 0, player:GetMaxHealth() ) );
